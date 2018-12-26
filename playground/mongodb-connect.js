@@ -1,6 +1,6 @@
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb');
-const keys = require('./config/keys');
+const keys = require('../config/keys');
 
 MongoClient.connect(keys.mongoURI, (err, db) =>{
     if(err){
