@@ -6,9 +6,10 @@ const { ObjectID } = require('mongodb');
 var { mongoose } = require('./db/mongoose');
 var { Todo } = require('./models/todo');
 var { User } = require('./models/user');
+const keys = require('../config/keys');
 
 var app = express();
-const port = process.env.PORT || 3000;
+const port = keys.port;
 
 app.use(bodyParser.json());
 
